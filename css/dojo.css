@@ -1,0 +1,84 @@
+:root {
+  --bg-color: #333333;
+  --cta: #17a2b8;
+  --ft-family: "Roboto", sans-serif;
+  --btn-bg: #2b78e4;
+  --shadow-color: #000;
+  --btn-border-color: #000;
+  --transparent-border: 0.5rem;
+}
+
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Font size set up to work with relative units like rem*/
+html {
+  font-size: 62.5%;
+}
+
+/* Fixed width container class that will "auto-center" itself */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #2b78e4;
+  padding: 5px 20px;
+  border: 2px solid black;
+  color: white;
+  box-shadow: 3px 3px 0 #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.col {
+  flex: 1;
+}
+
+/*----------NAVBAR----------*/
+
+.nav {
+  border: var(--transparent-border) solid transparent;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  background-color: var(--bg-color);
+  justify-content: space-between;
+  padding: 0 2rem;
+  place-items: center;
+}
+
+div.nav > h1 {
+  font-size: 3.2rem;
+}
+div.nav > .nav-links {
+  width: 40%;
+  justify-content: space-between;
+  list-style: none;
+  display: flex;
+  place-items: center;
+}
+div.nav a {
+  border: var(--transparent-border) solid transparent;
+
+  text-decoration: none;
+  padding: 2rem;
+}
+div.nav a:hover,
+div.nav a:active {
+  border-bottom: var(--transparent-border) solid var(--btn-bg);
+  font-weight: 500;
+}
+
+div.nav li {
+  justify-content: space-evenly;
+}
